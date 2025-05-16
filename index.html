@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JALA Academy Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">Magnus</div>
+    <div class="profile">
+      <div class="avatar">👤</div>
+      <div class="user-info">
+        <div class="name">Guest User</div>
+        <div class="role">User</div>
+      </div>
+    </div>
+    <nav>
+      <div>
+      <ul>
+        <li><a href="index.html"><button class="dropbtn">🏠 Home</button></a></li>
+
+        <li><button onclick="toggleDropdown(i='dropdownContent1')" class="dropbtn">👨‍💼 Employee <i class="fa fa-caret-down"></i></button></li>
+        <div id="dropdownContent1" class="dropdown-content">
+          <a href="#">XYZ Option 1</a>
+          <a href="#">XYZ Option 2</a>
+        </div>
+        <li><button onclick="toggleDropdown(i='dropdownContent2')" class="dropbtn"> 📁 More  <i class="fa fa-caret-down"></i></button></li>
+        <div id="dropdownContent2" class="dropdown-content">
+          <a href="tags.html">Tags</a>
+          <a href="autocomplete.html">Autocomplete</a>
+          <a href="menu.html">Menu</a>
+          <a href="image.html">Image</a>
+          <a href="tags.html">Tooltip</a>
+          <a href="popup.html">Popup</a>
+          <a href="slider.html">Slider</a>
+          <a href="#">XYZ Option 3</a>
+          <a href="#">XYZ Option 3</a>
+        </div>
+        <li><button onclick="toggleDropdown(i='dropdownContent3')" class="dropbtn">⚙️ Settings <i class="fa fa-caret-down"></i></button></li>
+        <div id="dropdownContent3" class="dropdown-content">
+          <a href="#">XYZ Option 1</a>
+          <a href="#">XYZ Option 2</a>
+        </div>
+      </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Area -->
+  <div class="main">
+    <div class="topbar">
+      <div class="logout" onclick="logout()">🔓 Logout</div>
+    </div>
+
+    <div class="content">
+      <h1>Welcome to JALA Academy</h1>
+      <p class="subtitle">The world's best up-skilling academy</p>
+
+      <div class="box">
+        <strong>Do you want to learn Selenium/cucumber Automation completely with Practical Scenarios in 7 Days?</strong> Use this website to find all the scenarios at one place.<br><br>
+        To understand or test RESTful APIs, use the JALA Academy FREE live APIs. Search on Google with the keyword <strong>"JALA Academy Postman APIs"</strong>
+      </div>
+
+      <div class="box">
+        You learn Everything by doing projects if you are very serious to get a software job in 90 days
+        <a href="http://jalatechnologies.com" target="_blank">http://jalatechnologies.com</a><br>
+        Don't forget to read our website JALA Academy completely to know more opportunities.
+      </div>
+
+      <div class="box highlight">
+        If you are a working professional, Up-skill with JALA Academy Job Guarantee Programs to keep your Job secure for 10 Years
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 <a href="https://jalatechnologies.com">JALA Technologies</a>. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Sidebar and Topbar: Same as before -->
+  <div class="sidebar">
+    <div class="logo">Magnus</div>
+    <div class="profile">
+      <div class="avatar">👤</div>
+      <div class="user-info">
+        <div class="name">Guest User</div>
+        <div class="role">User</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>🏠 Home</li>
+        <li>👨‍💼 Employee</li>
+        <li>📁 More</li>
+        <li>⚙️ Settings</li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <div class="logout" onclick="logout()">🔓 Logout</div>
+    </div>
+
+    <div class="content">
+      <h2>Tabs</h2>
+
+      <!-- Tabs Navigation -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab(event, 'plan')">Plan to Succeed</button>
+        <button class="tab-btn" onclick="showTab(event, 'unlearning')">UnLearning</button>
+        <button class="tab-btn" onclick="showTab(event, 'ways')">Ways of Unlearning</button>
+      </div>
+
+      <!-- Tabs Content -->
+      <div class="tab-content" id="plan">
+        <p>Congratulations, You are in the best place to learn the technologies for JOB. Please strictly follow the plan for the first 45 days to see the unbelievable results.</p>
+      </div>
+
+      <div class="tab-content" id="unlearning" style="display: none;">
+        <p>You must <strong>UNLEARN</strong> to <strong>LEARN</strong> new things every day as technologies are changing faster than ever and because the old rules will no longer apply... and so your old knowledge is. It's time for us to think beyond.</p>
+        <p>It’s not just learning technologies, also you learn how to use your knowledge and experience to get a job in less than 100 days.</p>
+
+        <input type="text" placeholder="Your thoughts..." style="width: 45%; padding: 8px; margin-top: 10px;" />
+        <input type="text" placeholder="Next steps..." style="width: 45%; padding: 8px; margin-top: 10px;" />
+      </div>
+
+      <div class="tab-content" id="ways" style="display: none;">
+        <p>Here are some effective ways to unlearn and re-learn:</p>
+        <ul>
+          <li>Challenge existing assumptions</li>
+          <li>Practice daily experimentation</li>
+          <li>Keep up with trends</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 <a href="https://jalatechnologies.com">JALA Technologies</a>. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

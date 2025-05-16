@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">Magnus</div>
+    <div class="profile">
+      <div class="avatar">👤</div>
+      <div class="user-info">
+        <div class="name">Guest User</div>
+        <div class="role">User</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>🏠 Home</li>
+        <li>👨‍💼 Employee</li>
+        <li>📁 More</li>
+        <li>⚙️ Settings</li>
+      </ul>
+    </nav>
+  </div>
+
+ <!-- Main Area -->
+  <div class="main">
+    <div class="topbar">
+      <div class="logout" onclick="logout()">🔓 Logout</div>
+    </div>
+
+
+
+<div class="main">
+  <h2>Menu</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab(event, 'singleMenu')">Single Menus</button>
+    <button class="tab-btn" onclick="switchTab(event, 'subMenu')">Sub Menus</button>
+  </div>
+
+  <!-- Single Menu Tab -->
+  <div class="tab-content" id="singleMenu">
+    <div class="menu-container">
+      <div class="menu-left">
+        <button onclick="selectMenu('Testing')">Testing</button>
+        <button onclick="selectMenu('JAVA')">JAVA</button>
+        <button onclick="selectMenu('.Net')">.Net</button>
+        <button onclick="selectMenu('Database')">Database</button>
+      </div>
+      <div class="menu-output" id="output">You Have Selected Core Java Menu Option.</div>
+    </div>
+  </div>
+
+  <!-- Sub Menu Tab -->
+  <div class="tab-content" id="subMenu" style="display: none;">
+    <div class="menu-container">
+      <div class="menu-left">
+        <button onclick="showSubMenu()">Testing</button>
+        <button onclick="showSubMenu()">JAVA</button>
+        <button onclick="showSubMenu()">.Net</button>
+        <button onclick="showSubMenu()">Database</button>
+      </div>
+
+      <div class="menu-right" id="submenu" style="display: none;">
+        <button onclick="selectMenu('C#')">C#</button>
+        <button onclick="selectMenu('ASP.NET')">ASP.NET</button>
+        <button onclick="selectMenu('ADO.NET')">ADO.NET</button>
+        <button onclick="selectMenu('MVC')">MVC</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    
+   <footer>
+      &copy; 2025 <a href="https://jalatechnologies.com">JALA Technologies</a>. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Links</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Sidebar and Topbar: Same as before -->
+  <div class="sidebar">
+    <div class="logo">Magnus</div>
+    <div class="profile">
+      <div class="avatar">👤</div>
+      <div class="user-info">
+        <div class="name">Guest User</div>
+        <div class="role">User</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>🏠 Home</li>
+        <li>👨‍💼 Employee</li>
+        <li>📁 More</li>
+        <li>⚙️ Settings</li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <div class="logout" onclick="logout()">🔓 Logout</div>
+    </div>
+
+    <div class="content">
+      <h2>Links</h2>
+
+      <!-- Tabs Navigation -->
+      <div class="tabs">
+        <button class="tab-btn" onclick="showTab(event, 'working')">Working Links</button>
+        <button class="tab-btn" onclick="showTab(event, 'Broken')">Broken Links</button>
+        <button class="tab-btn" onclick="showTab(event, 'Image')">Image Links</button>
+        <button class="tab-btn" onclick="showTab(event, 'status')">Status Codes</button>
+      </div>
+
+      <!-- Links Content -->
+      <div class="tab-content" id="working">
+        <div class="linkdiv"><h4><a href="https://www.youtube.com/">link1</a></h4></div>
+        <div class="linkdiv"><h4><a href="https://www.google.com/chrome/index.html">link2</a></h4></div>
+        <div class="linkdiv"><h4><a href="https://www.w3schools.com/">link3</a></h4></div>
+      </div>
+
+      <div class="tab-content" id="Broken" style="display: none;">
+        <div class="linkdiv"><h4><a href="https://timesofindia.indiatimes.com/">link1</a></h4></div>
+        <div class="linkdiv"><h4><a href="https://en.wikipedia.org/wiki/Hyderabad">link2</a></h4></div>
+        <div class="linkdiv"><h4><a href="https://valvo.com/">link3</a></h4></div>
+      </div>
+
+      <div class="tab-content" id="Image" style="display: none;">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+
+      <div class="tab-content" id="status" style="display: none;">
+        <div class="linkdiv"><h4><a href="https://www.primevideo.com/region/us/splash/getTheApp">link1</a></h4></div>
+        <div class="linkdiv"><h4><a href="https://zoom.us/signin#/login">link2</a></h4></div>
+        <div class="linkdiv"><h4><a href="https://www.redbus.in/">link3</a></h4></div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2025 <a href="https://jalatechnologies.com">JALA Technologies</a>. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
